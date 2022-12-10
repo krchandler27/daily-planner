@@ -1,8 +1,21 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-}
+  }
 
+  #currentDay {
+    margin-top: 30px;
+font-size: 50px;
+  }
+
+  #statementUnderMyDailyPlanner {
+    margin-top: -5px;
+    font-size: 20px;
+  }
+
+header {
+  text-align: center;
+}
 textarea {
   background: transparent;
   border: none;
@@ -14,6 +27,10 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+}
+
+.container-fluid {
+margin-top: -35px;
 }
 
 .time-block {
