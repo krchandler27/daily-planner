@@ -5,7 +5,7 @@
 var currentDate = dayjs().format('MMM D, YYYY, hh:mm A');
 $('#currentDay').text(currentDate);
 
-updateTime (){
+function updateTime (){
   var currentDate = dayjs().format('MMM D, YYYY, hh:mm A');
 $('#currentDay').text(currentDate);
  }
