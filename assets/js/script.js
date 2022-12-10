@@ -4,7 +4,13 @@
 
 var currentDate = dayjs().format('MMM D, YYYY, hh:mm A');
 $('#currentDay').text(currentDate);
-window.setTimeout("currentDate;", 1000); 
+
+updateTime (){
+  var currentDate = dayjs().format('MMM D, YYYY, hh:mm A');
+$('#currentDay').text(currentDate);
+ }
+
+ window.setTimeout(updateTime, 1000);
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
