@@ -1,6 +1,5 @@
 var currentHour = dayjs().hour();
-var saveBtns = $(".savebtn");
-var description = $(".description").text;
+var hourId = localStorage.getItem("key")
 
 function updateTime() {
   var currentDate = dayjs().format('MMM D, YYYY, hh:mm A');
@@ -33,7 +32,9 @@ $(".saveBtn").each(function () {
   })
 })
 
-// $(".row").each(function () {
-//  ($(this).attr("id")).localStorage.getItem("key");
+  for (let i = 5; i <= 22; i++) {
+    var storedLS = localStorage.getItem("hour-" + i);
+    console.log(storedLS);
+    $("#hour-" + i).children("textarea").val(storedLS);
+  }
 
-//  }
