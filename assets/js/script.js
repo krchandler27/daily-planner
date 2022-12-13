@@ -23,7 +23,6 @@ $('.hour').each(function () {
   }
 });
 
-
 $(".saveBtn").each(function () {
   $(this).on("click", function () {
     var key = $(this).parent().attr("id");
@@ -32,9 +31,8 @@ $(".saveBtn").each(function () {
   })
 })
 
-  for (let i = 5; i <= 22; i++) {
-    var storedLS = localStorage.getItem("hour-" + i);
-    console.log(storedLS);
-    $("#hour-" + i).children("textarea").val(storedLS);
-  }
+for (let i = 5; i <= 22; i++) {
+  var storedLS = localStorage.getItem("hour-" + i);
+  $("#hour-" + i).children("textarea").val(storedLS);
+}
 
