@@ -24,9 +24,6 @@ $('.hour').each(function () {
   }
 });
 
-// function saveData() {
-
-// }
 
 $(".saveBtn").each(function () {
   $(this).on("click", function () {
@@ -36,3 +33,7 @@ $(".saveBtn").each(function () {
   })
 })
 
+// $(".row").each(function () {
+//  ($(this).attr("id")).localStorage.getItem("key");
+
+//  }
