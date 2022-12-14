@@ -14,6 +14,18 @@ body {
   font-size: 20px;
 }
 
+#clearAll {
+  font-size: 30px;
+  border: 5px solid black;
+  background-color: rgb(37, 200, 250);
+  border-radius: 15px;
+  color: black;
+}
+
+#clearAllDiv {
+  margin-bottom:-15px;
+}
+
 header {
   text-align: center;
 }

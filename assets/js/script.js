@@ -10,18 +10,21 @@ updateTime();
 
 setInterval(updateTime, 60000);
 
-$('.hour').each(function () {
+function colorCode() {
+  $('.hour').each(function () {
+    if (($(this).text()) < currentHour) {
+      $(this).parent().parent().addClass("past");
+    }
+    if (($(this).text()) == currentHour) {
+      $(this).parent().parent().addClass("present");
+    }
+    if (($(this).text()) > currentHour) {
+      $(this).parent().parent().addClass("future");
+    }
+  })
+}
 
-  if (($(this).text()) < currentHour) {
-    $(this).parent().parent().addClass("past");
-  }
-  if (($(this).text()) == currentHour) {
-    $(this).parent().parent().addClass("present");
-  }
-  if (($(this).text()) > currentHour) {
-    $(this).parent().parent().addClass("future");
-  }
-});
+colorCode();
 
 $(".saveBtn").each(function () {
   $(this).on("click", function () {
@@ -36,3 +39,7 @@ for (let i = 5; i <= 22; i++) {
   $("#hour-" + i).children("textarea").val(storedLS);
 }
 
+$("#clearAll").on("click", function () {
+  localStorage.clear();
+  location.reload();
+})
